@@ -1,0 +1,38 @@
+[
+    {
+        "by" : "test 1",
+        "id" : 192327,
+        "score" : 6,
+        "time" : 1704034249,
+        "title" : "newest",
+        "type" : "story",
+        "url" : ""
+      },
+      {
+        "by" : "test 2",
+        "id" : 1923235,
+        "score" : 16,
+        "time" : 1704033267,
+        "title" : "most votes",
+        "type" : "story",
+        "url" : ""
+      },
+      {
+        "by" : "test 3",
+        "id" : 192327,
+        "score" : 4,
+        "time" : 1704031755,
+        "title" : "least votes",
+        "type" : "story",
+        "url" : ""
+      },
+      {
+        "by" : "test 4",
+        "id" : 1923274,
+        "score" : 5,
+        "time" : 1704031117,
+        "title" : "oldest",
+        "type" : "story",
+        "url" : ""
+      }
+]

@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test card component renders card component 1`] = `
+<div>
+  <div
+    class="mb-2 smaller card"
+  >
+    <div
+      class="card-header"
+    >
+      <i
+        class="bi bi-caret-up-fill me-auto"
+      />
+      <span
+        class="ms-1 badge rounded-pill bg-success"
+      >
+        Votes: 
+        6
+      </span>
+      <span
+        class="float-end"
+      >
+        <small
+          class="me-1"
+        >
+          2 hours ago
+        </small>
+        <button
+          class="remove-outline btn btn-outline-dark btn-sm"
+          type="button"
+        >
+          <i
+            class="text-center bi bi-x-lg"
+          />
+        </button>
+      </span>
+    </div>
+    <div
+      class="card-body"
+    >
+      <p
+        class="mb-0 card-text"
+      >
+        2
+        . 
+        newest
+      </p>
+      <small>
+        By: 
+        test 1
+         
+      </small>
+    </div>
+  </div>
+</div>
+`;
