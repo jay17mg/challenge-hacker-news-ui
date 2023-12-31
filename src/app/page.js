@@ -1,11 +1,12 @@
 "use client"
 import "bootstrap-icons/font/bootstrap-icons.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Head from './components/header';
 import { useEffect, useState } from 'react';
 import CardComp from './components/card-comp';
 import { Container, Nav, Dropdown, DropdownItem, DropdownMenu, DropdownToggle, NavItem, NavLink, Spinner } from 'react-bootstrap';
 import { sortStories } from "./components/utils";
+import Header from "./components/header";
+import Head from "next/head";
 
 export default function Home() {
   const [selected, setSelected] = useState('Latest')
@@ -21,7 +22,7 @@ export default function Home() {
 
   useEffect(() => {
     fetchData(tabActiveKey);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const fetchData = (storyType) => {
@@ -58,7 +59,10 @@ export default function Home() {
 
   return (
     <>
-      <Head />
+      <Head>
+        <title>Hacker News | Home</title>
+      </Head>
+      <Header />
       <Nav className="storiesNav" fill activeKey={tabActiveKey} onSelect={(ek, e) => tabChanged(ek, e)} variant="tabs">
         <NavItem>
           <NavLink eventKey='newstories'>New stories</NavLink>

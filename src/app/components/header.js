@@ -3,8 +3,9 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { NavLink, NavbarBrand, NavbarCollapse, NavbarToggle } from 'react-bootstrap';
 import Image from 'next/image';
+import Head from 'next/head';
 
-export default function Head(){
+export default function Header(){
     return(
         <>
         <Navbar className='bgorange' expand="md">
