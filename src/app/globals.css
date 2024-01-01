@@ -96,6 +96,7 @@ a {
   }
 }
 
+/* CSS added by dev */
 .bgorange{
   background-color: #ff6600;
 }
@@ -114,10 +115,6 @@ a {
   align-items: center;
   vertical-align: middle;
   margin: auto;
-  /* margin: auto !important;
-  width: auto;
-  justify-content: center !important;
-  align-content: center; */
 }
 
 .remove-outline{
@@ -130,15 +127,6 @@ a {
   margin-top: 50px;
 }
 
-.storiesNav a{
-  color: black;
-  /* background-color: gray; */
-}
-.storiesNav a:hover{
-  color: #ff6600 !important;
-  /* background-color: white; */
-}
-
 .max-content{
   min-width: 20% !important
 }
@@ -147,19 +135,8 @@ a {
   outline: #f6f6ef !important;
   text-decoration: double !important;
   border-bottom-color: #f6f6ef !important;
-  color:#ff6600 !important;
 }
 
 body{
   background-color: #f6f6ef !important;
 }
-
-/* body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */

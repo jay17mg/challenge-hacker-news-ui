@@ -14,16 +14,17 @@ export default function Home() {
   const [tabActiveKey, setTabActiveKey] = useState('newstories')
   const [stories, setStories] = useState([])
   const [loaded, setLoaded] = useState(false)
+
+  useEffect(() => {
+    fetchData(tabActiveKey);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []) // when component is mounted 
+
   useEffect(() => {
     if (stories.length > 0) {
       setLoaded(true)
     }
   }, [stories])
-
-  useEffect(() => {
-    fetchData(tabActiveKey);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
 
   const fetchData = (storyType) => {
     fetch(`https://hacker-news.firebaseio.com/v0/${storyType}.json?print=pretty`).then((response) =>
@@ -91,7 +92,6 @@ export default function Home() {
             </Dropdown>
             {stories.map((story, i) =>
               <CardComp key={story.id} index={i} data={story} />
-
             )}
           </> : ''}
       </Container>
